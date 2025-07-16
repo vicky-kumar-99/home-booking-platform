@@ -1,0 +1,134 @@
+body {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex:1;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color:brown;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color:black !important; /*in this work the bootstrap but i want do the my color than use ' !important' */
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-socials {
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.f-info-socials i {
+    font-size:1.2em;
+    margin-right: 1.5rem;
+}
+
+.f-info-links {
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand  {
+    display:flex;
+    align-items: center;
+}
+
+
+
+
+.f-info-links a:hover {
+    text-decoration:underline;
+}
+
+.f-info {
+    height:8rem;
+    background-color: #ededed;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* card */
+
+.card {
+    border:none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+
+}
+
+.card-body {
+    padding:0 !important;
+}
+
+.card-text p {
+    font-size: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* new brn */
+
+.add-btn {
+    background-color: rgb(247, 71, 71) !important;
+    border: none !important;
+
+}
+
+/* edit btn */
+
+.edit-btn {
+    background-color: rgb(245, 84, 84) !important;
+    border: none !important;
+    border-radius: 4px;
+}
+
+/* card-img */
+
+.card-img {
+    height:30vh;
+}
+
+.btns {
+    display: flex;
+    
+}
+
+.card-review {
+    
+    border: 2px solid rgb(120, 108, 93) !important;
+}
