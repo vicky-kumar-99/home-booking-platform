@@ -126,6 +126,12 @@ app.post("/login",saveRedirectUrl,
 // logout .....
 app.get("/logout",userController.logOut );
 
+//  new add ....
+
+app.get("/", (req, res) => {
+    res.render("home");
+})
+
 // six....
 app.all("*", (req,res,next) => {
      next(new ExpressError(404, "page not found"));
@@ -138,7 +144,12 @@ app.use((err,req,res,next) => {
 
 })
 
-app.listen(8080, () => {
-    console.log("listening on the port 8080");
+// app.listen(8080, () => {
+//     console.log("listening on the port 8080");
+// });
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
 
